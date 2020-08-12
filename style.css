@@ -5,24 +5,57 @@ h1 {
 	color: black;
 }
 
+h2 {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20pt;
+	color: black;
+}
+
 table#navigation {
 	text-align: center;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 16pt;
 	color: black;
 }
+table#navigation th{
+	background-color: cornflowerblue;
+	color: white;
+	height: 30px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 16pt;
+}
 
 table#navigation td {
 	width: 25% ;
 }
 
+table#navigation a {
+	color: white;
+	text-decoration: none;
+}
+
 table#profile {
-	text-align: center;
 	border: none;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 16pt;
+	font-family:Times, "Times New Roman", "serif";
+	font-size: 14pt;
 }
 
 table#profile td {
 	width: 50% ;
+	vertical-align: center;
+}
+
+table {
+	font-family: Times, "Times New Roman", "serif";
+	font-size: 14pt;
+	color: black;
+}
+
+th {
+	background-color: cornflowerblue;
+	color: white;
+	height: 30px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 16pt;
 }
