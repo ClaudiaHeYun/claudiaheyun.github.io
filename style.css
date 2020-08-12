@@ -1,12 +1,28 @@
-@charset "UTF-8";
-#header {
-}
-#header h1 {
-    font-family: abril-fatface;
-    font-style: normal;
-    font-weight: 400;
-	font-size: 42px;
+h1 {
 	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 36pt;
+	color: black;
 }
-.menu {
+
+table#navigation {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 16pt;
+	color: black;
+}
+
+table#navigation td {
+	width: 25% ;
+}
+
+table#profile {
+	text-align: center;
+	border: none;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 16pt;
+}
+
+table#profile td {
+	width: 50% ;
 }
