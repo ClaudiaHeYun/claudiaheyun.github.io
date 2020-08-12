@@ -46,8 +46,8 @@ for pi in symmetric(5):
         counter = counter + 1
 
 t2 = time.time()
-print 'generating lists of theta graphs'
-print t2-t1
+print ('generating lists of theta graphs')
+print (t2-t1)
 
 # generating boundary maps
 dTop = matrix(QQ,int(len(dimTopM1)/2),int(len(dimTop)/2))
@@ -69,15 +69,15 @@ for j in range(int(len(dimTopM1)/2)):
         dLower[index,j] = entry*graph.sign
 
 t3 = time.time()
-print 'generating boundary maps as matrices'
-print t3-t2
+print ('generating boundary maps as matrices')
+print (t3-t2)
 
 # computing kernels
 kerTop = dTop.right_kernel()
 kerLower = dLower.right_kernel()
 t4 = time.time()
-print 'computing kernels of differentials'
-print t4-t3
+print ('computing kernels of differentials')
+print (t4-t3)
 
 #calculating the character of the chain group and the top degree homology group
 
@@ -116,9 +116,9 @@ for permutation in permList:
     print(str(perm)+' done')
 t6 = time.time()
 
-print 'character of top degree chain group',C_top
-print 'character of top degree homology',H_top
-print t6-t5
+print ('character of top degree chain group',C_top)
+print ('character of top degree homology',H_top)
+print (t6-t5)
 
 # do the same operation for kerLower
 kerLower_char = []
@@ -143,8 +143,8 @@ for permutation in permList:
     print(str(perm)+' done')
 t7 = time.time()
 
-print 'character of the kernel of lower degree differential',kerLower
-print t7-t6
+print ('character of the kernel of lower degree differential',kerLower)
+print (t7-t6)
 
 #------------------Part II; Calculating irreducible subrepresentations-----------------
 
@@ -238,7 +238,7 @@ for perm in symmetric(5):
         perm_matrix[row_index,i] = entry
     all_perm_mat[str(perm)] = perm_matrix
 fin=time.time()
-print 'producing matrices for element in S_5 wrt theta graphs took', fin-start
+print ('producing matrices for element in S_5 wrt theta graphs took', fin-start)
 
 #calculating the projection matrix for each irreducible component using projection formula from Serre
 
@@ -311,7 +311,7 @@ for perm in symmetric(5):
     v311[str(perm)] = perm_mat
     v311_inverse[str(perm)] = perm_mat.inverse()
 fin = time.time()
-print 'producing matrices wrt our standard basis took', fin-start
+print ('producing matrices wrt our standard basis took', fin-start)
 
 # now we need to do the same but using basis of the Specht module in terms of polytabloids.
 # manually calculate the matrices of transpositions
@@ -340,7 +340,7 @@ for perm in symmetric(5):
         sp311[str(perm)] = mat
         sp311_inverse[str(perm)] = mat.inverse()
 fin = time.time()
-print 'producing matrices wrt to polytabloids took', fin-start
+print ('producing matrices wrt to polytabloids took', fin-start)
 
 # now use the formula in Serre's book
 h = matrix(QQ,[[1,0,0,0,0,0],[0,1,0,0,0,0],[0,0,1,0,0,0],[0,0,0,1,0,0],[0,0,0,0,1,0],[0,0,0,0,0,1]])
@@ -348,5 +348,5 @@ h_0 = matrix(QQ,6,6)
 for perm in symmetric(5):
     h_0 += sp311_inverse[str(perm)]*h*v311[str(perm)]
 
-print 'Isomorphism from V_311 to S^311 is given by'
-print h_0
+print ('Isomorphism from V_311 to S^311 is given by')
+print (h_0)
