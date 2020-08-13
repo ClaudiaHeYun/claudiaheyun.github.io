@@ -64,21 +64,3 @@ body {
 a {
 	text-decoration: none;
 }
-
-div.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-div.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 60pt;
-	color: azure;
-	text-align: center;
-	padding: 50px;
-}
